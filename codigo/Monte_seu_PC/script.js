@@ -3,14 +3,14 @@
     PlacaMae = [
             { nome: "Placa Mãe MSI A520M-A PRO", preco: "439.99" },
             { nome: "Placa Mãe Gigabyte B550M AORUS ELITE", preco: "939.00" },
-            { nome: "Placa Mãe Asus Rog Crosshair X670E Extreme", preco: "8.499.99" }
+            { nome: "Placa Mãe Asus Rog Crosshair X670E Extreme", preco: "8499.99" }
         ]
     
     let Processador = {};
     Processador = [
             { nome: "Intel PROCESSADOR CORE I5", preco: "729.00"},
             { nome: "Processador AMD Ryzen 5 5600G", preco: "959.00"},
-            { nome: "Processador Intel Core i9-10900KF", preco: "1.999.99"}
+            { nome: "Processador Intel Core i9-10900KF", preco: "1999.99"}
         ]
 
     let MemoriaRam = {};
@@ -23,8 +23,8 @@
     let PlacaDeVideo = {};
     PlacaDeVideo = [
             { nome: "PLACA DE VIDEO TGT GEFORCE GT610", preco: "299.99"},
-            { nome: "Placa de Vídeo RTX 3050", preco: "1.739.99"},
-            { nome: "Placa de Vídeo RTX 3060 Ti", preco: "3.399.99"}
+            { nome: "Placa de Vídeo RTX 3050", preco: "1739.99"},
+            { nome: "Placa de Vídeo RTX 3060 Ti", preco: "3399.99"}
         ]
 
 
@@ -125,7 +125,7 @@ opcoes04.addEventListener("change", function() {
       document.getElementById("PlacaDeVideo").innerHTML = "";
       PrecoPV = 0;
     }
-    document.getElementById("PrecoTotal").innerHTML = "R$" + PrecoPM + PrecoP + PrecoMR + PrecoPV;
+    document.getElementById("PrecoTotal").innerHTML = "R$" + (PrecoPM + PrecoP + PrecoMR + PrecoPV);
   });
 
 

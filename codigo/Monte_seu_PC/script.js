@@ -53,7 +53,7 @@ opcoes01.addEventListener("change", function() {
     document.getElementById("Placa-Mae").innerHTML = "";
     PrecoPM = 0;
   }
-  document.getElementById("PrecoTotal").innerHTML = "R$" + PrecoPM + PrecoP + PrecoMR + PrecoPV;
+  document.getElementById("PrecoTotal").innerHTML = "R$" + parseFloat(PrecoPM + PrecoP + PrecoMR + PrecoPV);
 });
 
 const opcoes02 = document.getElementById("opcoes02");
@@ -77,7 +77,7 @@ opcoes02.addEventListener("change", function() {
       document.getElementById("Processador").innerHTML = "";
       PrecoP = 0;
     }
-    document.getElementById("PrecoTotal").innerHTML = "R$" + PrecoPM + PrecoP + PrecoMR + PrecoPV;
+    document.getElementById("PrecoTotal").innerHTML = "R$" + parseFloat(PrecoPM + PrecoP + PrecoMR + PrecoPV);
   });
 
 const opcoes03 = document.getElementById("opcoes03");
@@ -101,7 +101,7 @@ opcoes03.addEventListener("change", function() {
       document.getElementById("MemoriaRam").innerHTML = "";
       PrecoMR = 0;
     }
-    document.getElementById("PrecoTotal").innerHTML = "R$" + PrecoPM + PrecoP + PrecoMR + PrecoPV;
+    document.getElementById("PrecoTotal").innerHTML = "R$" + parseFloat(PrecoPM + PrecoP + PrecoMR + PrecoPV);
   });
 
 const opcoes04 = document.getElementById("opcoes04");
@@ -125,7 +125,7 @@ opcoes04.addEventListener("change", function() {
       document.getElementById("PlacaDeVideo").innerHTML = "";
       PrecoPV = 0;
     }
-    document.getElementById("PrecoTotal").innerHTML = "R$" + (PrecoPM + PrecoP + PrecoMR + PrecoPV);
+    document.getElementById("PrecoTotal").innerHTML = "R$" + parseFloat(PrecoPM + PrecoP + PrecoMR + PrecoPV);
   });
 
 

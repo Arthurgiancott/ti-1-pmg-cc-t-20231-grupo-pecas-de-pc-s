@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <link href="style.css" rel="stylesheet" type="text/css"> 
+    <meta charset="UTF-8">
+    <title>Filtro de produtos</title>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/fuse.js/6.4.6/fuse.basic.min.js"></script>
+</head>
+<body>
+    <header>
+        <h1>Pesquise seus produtos!</h1>
+    </header>
+    <main>
+        <section>
+            <form id="form-busca" action="#" method="get">
+                <input type="text" id="busca" name="busca" autocomplete="off">
+                <input type="submit" value="Buscar">
+            </form>
+            <div id="filtros">
+                <input type="checkbox" id="Monitor" name="Monitor">
+                <label for="Monitor">Monitor-Gamer</label>
+                <input type="checkbox" id="Cooler" name="Cooler">
+                <label for="Cooler">Cooler</label>
+                <input type="checkbox" id="Memoria-Ram" name="Memoria-Ram">
+                <label for="Memoria-Ram">Memoria-Ram</label>
+                <input type="checkbox" id="Armazenamento" name="Armazenamento">
+                <label for="Armazenamento">SSD</label>
+                <input type="checkbox" id="Hard-Disk" name="Armazenamento">
+                <label for="Armazenamento">Hard-Disk</label>
+                <input type="checkbox" id="Placa-Mãe" name="Placa-Mãe">
+                <label for="Placa-Mãe">Placa-Mãe</label>
+                <input type="checkbox" id="Placa de Video" name="Placa de Video">
+                <label for="Placa-de-Video">Placa de Video</label>
+                <input type="checkbox" id="Processador" name="Processador">
+                <label for="Processador">Processador</label>
+                <input type="checkbox" id="Fonte" name="Fonte">
+                <label for="Fonte">Fonte</label>
+                <input type="checkbox" id="Gabinete" name="Gabinete">
+                <label for="Gabinete">Gabinete</label>
+                <!-- Adicione mais caixas de seleção para outros tipos de comida -->
+            </div>
+        </section>
+        <section id="resultados">
+            <h2>Resultados da Busca</h2>
+            <div id="restaurantes">
+                <!-- Restaurantes serão exibidos aqui com JavaScript -->
+            </div>
+        </section>
+    </main>
+    <footer>
+        <p>Busca de produtos &copy; 2023</p>
+    </footer>
+    <script src="busca1.js"></script>
+    <script>
+        function obterFiltrosSelecionados() {
+            var filtrosSelecionados = [];
+            document.querySelectorAll('#filtros input[type="checkbox"]:checked').forEach(function(checkbox) {
+                filtrosSelecionados.push(checkbox.id);
+            });
+            return filtrosSelecionados;
+        }
+
+
+   </script>
+</body>
+</html>

@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Double Slider login / Registration form</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+  <div class="container" id="container">
+
+    <div class="form-container register-container">
+      <form action="#">
+        <h1>Registre-se Aqui</h1>
+        <input type="text" placeholder="Name">
+        <input type="email" placeholder="Email">
+        <input type="password" placeholder="Password">
+        <input type="telephone" placeholder="Telephone">
+        <button class="button" onclick="window.location.href='confirmação.html'">Cadastro</button>
+     
+      </form>
+    </div>
+
+    <div class="form-container login-container">
+      <form action="#">
+        <h1>Login</h1>
+        <input type="email" placeholder="Email">
+        <input type="password" placeholder="Password">
+        <div class="content">
+          <div class="checkbox">
+            <input type="checkbox" name="checkbox" id="checkbox">
+            <label>Lembre-me</label>
+          </div>
+          <div class="pass-link">
+            <a href="#">Esqueceu a Senha?</a>
+          </div>
+        </div>
+        <button id="login">Login</button>
+    </div>
+
+    <div class="overlay-container">
+      <div class="overlay">
+        <div class="overlay-panel overlay-left">
+          <h1 class="title">Olá <br> Cliente</h1>
+          <p>Se você ainda não possui uma conta, junte-se a nos é comece a pesquisar </p>
+          <button class="ghost" id="login">Login
+            <i class="lni lni-arrow-left login"></i>
+          </button>
+        </div>
+        <div class="overlay-panel overlay-right">
+          <h1 class="title">Comece a sua <br> jornada agora</h1>
+          <p>Se você ainda não possui uma conta, junte-se a nos é comece a pesquisar</p>
+          <button class="ghost" id="register">Registro
+            <i class="lni lni-arrow-right register"></i>
+          </button>
+        </div>
+      </div>
+    </div>
+
+  </div>
+  <script src="java/javascript.js"></script>
+  <script src="java/js.js"></script>
+  <script src="java/botao.js"></script>
+</body>
+</div>
+</body>
+
+</html>

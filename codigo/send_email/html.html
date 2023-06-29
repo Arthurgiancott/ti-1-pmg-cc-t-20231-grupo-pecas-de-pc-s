@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+  <head>
+    <meta charset="UTF-8" />
+    <link rel="icon" type="image/svg+xml" href="/vite.svg" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style.css" />
+    <script src="app.js" type="module"></script>
+    <title>Formulário de Inscrição na Newsletter</title>
+  </head>
+  <body>
+    <main>
+      <div id="signup" class="wrapper">
+        <div class="card">
+          <div class="content grid--md">
+            <h1 class="h1">Fique por dentro</h1>
+            <p>Várias pessoas já tiveram suas vidas mudadas ao escolherem um computador conosco:</p>
+            <ul role="list" class="grid--sm">
+              <li class="flex--sm items-start">
+               
+              </li>
+              <li class="flex--sm items-start">
+                <!-- Adicione aqui o segundo ícone -->
+              </li>
+              <li class="flex--sm items-start">
+                <!-- Adicione aqui o terceiro ícone -->
+              </li>
+            </ul>
+            <form action="/success.html" id="newsletter-form" class="grid--md">
+              <div class="grid--xs">
+                <div class="flex--between items-center">
+                  <label for="email"><small>Endereço de email</small></label>
+                  <p class="error-message hidden">
+                    <small>Email válido é obrigatório</small>
+                  </p>
+                </div>
+                <input
+                  type="email"
+                  id="email"
+                  placeholder="email@empresa.com"
+                  required
+                />
+              </div>
+              <button type="submit" class="btn">
+                Inscreva-se para receber nossas notícias em primeira mão
+              </button>
+            </form>
+          </div>
+        </div>
+      </div>
+      <div id="success" class="wrapper hidden">
+        <div class="content grid--md">
+          <svg
+            xmlns="http://www.w3.org/2000/svg"
+            width="64"
+            height="64"
+            viewBox="0 0 64 64"
+            class="icon--lg"
+          >
+            <defs>
+              <linearGradient id="a" x1="100%" x2="0%" y1="0%" y2="100%">
+                <stop offset="0%" stop-color="#FF6A3A" />
+                <stop offset="100%" stop-color="#FF527B" />
+              </linearGradient>
+            </defs>
+            <g fill="none">
+              <circle cx="32" cy="32" r="32" fill="url(#a)" />
+              <path
+                stroke="#FFF"
+                stroke-width="4"
+                d="m18.286 34.686 8.334 7.98 19.094-18.285"
+              />
+            </g>
+          </svg>
+          <p>
+            Um email de confirmação foi enviado para
+            <strong id="submitted-email"></strong>. Por favor, abra-o e clique no
+            botão dentro dele para confirmar sua inscrição.
+          </p>
+          <button class="btn" id="dismiss">Fechar mensagem</button>
+        </div>
+      </div>
+    </main>
+  </body>
+</html>

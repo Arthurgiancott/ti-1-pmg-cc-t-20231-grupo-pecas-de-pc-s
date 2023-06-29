@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+  <title>Formulário de Avaliação de Produto</title>
+  <meta charset="utf-8">
+  <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+  <header>
+    <div class="cabecalho">
+      <h1>Formulário de Avaliação de Produto</h1>
+    </div>
+  </header>
+
+  <form>
+    <div class="nome">
+      <label id="labelNome" for="campoNome">Nome de Usuário</label>
+      <input id="campoNome" type="text" placeholder="Entre com seu usuário">
+    </div>
+
+    <div class="email">
+      <label id="labelEmail" for="campoNome">E-mail</label>
+      <input id="campoEmail" type="text" placeholder="Entre com seu E-mail">
+    </div>
+
+
+
+
+
+
+    <div>
+  <p>Gostou do serviço prestado?</p>
+  <input type="radio" id="gostou-muito" name="classificacao" value="muito">
+  <label for="gostou-muito">Muito</label><br>
+
+  <input type="radio" id="gostou-sim" name="classificacao" value="sim">
+  <label for="gostou-sim">Sim</label><br>
+
+  <input type="radio" id="gostou-regular" name="classificacao" value="regular">
+  <label for="gostou-regular">Regular</label><br>
+
+  <input type="radio" id="gostou-nao" name="classificacao" value="nao">
+  <label for="gostou-nao">Não</label><br>
+</div>
+
+<!-- Opções para facilidade em encontrar o que queria -->
+<div>
+  <p>Foi fácil encontrar o que queria?</p>
+  <input type="radio" id="facilidade-muito" name="facilidade" value="muito">
+  <label for="facilidade-muito">Muito</label><br>
+
+  <input type="radio" id="facilidade-sim" name="facilidade" value="sim">
+  <label for="facilidade-sim">Sim</label><br>
+
+  <input type="radio" id="facilidade-regular" name="facilidade" value="regular">
+  <label for="facilidade-regular">Regular</label><br>
+
+  <input type="radio" id="facilidade-nao" name="facilidade" value="nao">
+  <label for="facilidade-nao">Não</label><br>
+</div>
+
+<!-- Opções para indicar para algum amigo -->
+<div>
+  <p>Nos indicaria para algum amigo?</p>
+  <input type="radio" id="indicaria-sim" name="amigo" value="sim">
+  <label for="indicaria-sim">Sim</label><br>
+
+  <input type="radio" id="indicaria-talvez" name="amigo" value="talvez">
+  <label for="indicaria-talvez">Talvez</label><br>
+
+  <input type="radio" id="indicaria-nao" name="amigo" value="nao">
+  <label for="indicaria-nao">Não</label><br>
+</div>
+
+
+
+
+
+
+
+
+
+
+
+    <button id="btnAvaliacao" type="submit">Enviar Avaliação</button>
+  </form>
+
+  <script src="script.js"></script>
+</body>
+
+</html>

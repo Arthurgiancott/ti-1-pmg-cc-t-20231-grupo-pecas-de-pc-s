@@ -1,0 +1,23 @@
+
+body{
+    background: gray;
+}
+
+.header {
+    background: #c5dd5a;
+    color: rgb(22, 22, 22);
+    font-size: 24px;
+    padding: 20px 0;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: block;
+}
+
+.logo {
+    margin-left: 30px;
+}
+
+.botaoCarrinho {
+    
+    text-align: right;
+}

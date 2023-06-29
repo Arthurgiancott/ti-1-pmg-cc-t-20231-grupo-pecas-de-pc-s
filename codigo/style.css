@@ -6,7 +6,7 @@ body{
 .Cabecalho {
     display: flex;
     justify-content: space-between;
-    align-items: center;
+    align-items:center ;
   }
 
 .header {
@@ -23,7 +23,16 @@ body{
     margin-left: 30px;
 }
 
+.Home {
+    border: none;
+}
+
 .botaoCarrinho {
+    opacity: 1;
     margin-right: 30px;
     text-align: right;
 }
+
+button:hover {
+    box-shadow: 0 0 10px 0px black;
+  }

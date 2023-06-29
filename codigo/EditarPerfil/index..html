@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <title>Perfil do Cliente</title>
+  <link rel="stylesheet" type="text/css" href="style.css">
+</head>
+
+<body>
+  <header>
+    <h1>Perfil do Cliente</h1>
+  </header>
+  <div class="container">
+    <div class="profile-picture"></div>
+    <div class="profile-info">
+      <h1 id="Nome">Pedro Moreira </h1>
+      <ul>
+        <li id="Endereco">Endereço: Rua Dom José Gaspar, nº 500</li>
+        <li id="Email">Email: PedroMoreira@gmail.com</li>
+        <li id="Telefone">Contato: (31) 98536-8206</li>
+      </ul>
+      <button id="editarPerfil">Editar Perfil</button>
+    </div>
+  </div>
+  <script src="script.js"></script>
+  <script>
+    document.getElementById('editarPerfil').addEventListener('click', function () {
+      editarPerfil();
+    });
+  </script>
+</body>
+
+</html>

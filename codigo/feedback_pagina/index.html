@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+  <title>Formulário de Avaliação de Produto</title>
+  <meta charset="utf-8">
+  <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+  <header>
+    <div class="cabecalho">
+      <h1>Formulário de Avaliação de Produto</h1>
+    </div>
+  </header>
+
+  <form>
+    <div class="nome">
+      <label id="labelNome" for="campoNome">Nome de Usuário</label>
+      <input id="campoNome" type="text" placeholder="Entre com seu usuário">
+    </div>
+
+    <div class="email">
+      <label id="labelEmail" for="campoNome">E-mail</label>
+      <input id="campoEmail" type="text" placeholder="Entre com seu E-mail">
+    </div>
+
+
+
+
+
+
+    <div>
+
+      <p>Gostou do serviço prestado ?</p>
+      <input type="radio" id="muito" name="classificacao" value="muito">
+      <label for="muito">Muito</label><br>
+
+      <input type="radio" id="sim" name="classificacao" value="sim">
+      <label for="sim">Sim</label><br>
+
+      <input type="radio" id="regular" name="classificacao" value="regular">
+      <label for="regular">Regular</label><br>
+
+      <input type="radio" id="nao" name="classificacao" value="nao">
+      <label for="nao">Não</label><br>
+
+    </div>
+
+
+
+    <div>
+
+      <p>Foi fácil encontrar o que queria ?</p>
+      <input type="radio" id="muito" name="facilidade" value="muito">
+      <label for="muito">Muito</label><br>
+
+      <input type="radio" id="sim" name="facilidade" value="sim">
+      <label for="sim">Sim</label><br>
+
+      <input type="radio" id="regular" name="facilidade" value="regular">
+      <label for="regular">Regular</label><br>
+
+      <input type="radio" id="nao" name="facilidade" value="nao">
+      <label for="nao">Não</label><br>
+
+
+    </div>
+
+
+    <div>
+      <p>Nos indicaria para algum amigo ?</p>
+      <input type="radio" id="sim" name="amigo" value="sim">
+      <label for="sim">Sim</label><br>
+
+      <input type="radio" id="talvez" name="amigo" value="talvez">
+      <label for="talvez">Talvez</label><br>
+
+
+      <input type="radio" id="nao" name="amigo" value="nao">
+      <label for="nao">Não</label><br>
+    </div>
+
+
+
+
+
+
+
+
+
+
+
+    <button id="btnAvaliacao" type="submit">Enviar Avaliação</button>
+  </form>
+
+  <script src="script.js"></script>
+</body>
+
+</html>
+

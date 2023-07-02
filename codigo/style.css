@@ -15,7 +15,7 @@ a {
   }
 
 .header {
-    background: #c5dd5a;
+    background: #000000;
     color: rgb(22, 22, 22);
     font-size: 24px;
     padding: 20px 0;
@@ -54,18 +54,6 @@ header .shopping{
 }
 header .shopping img{
     width: 40px;
-}
-header .shopping span{
-    background: red;
-    border-radius: 50%;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    color: #fff;
-    position: absolute;
-    top: -5px;
-    left: 80%;
-    padding: 3px 10px;
 }
 .list{
     display: grid;

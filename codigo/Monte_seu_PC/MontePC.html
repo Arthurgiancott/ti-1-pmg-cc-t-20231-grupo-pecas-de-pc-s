@@ -5,62 +5,83 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Peças para PC</title>
-    <link rel="stylesheet" type="text/css" href="estilo.css">
+    <link rel="stylesheet" href="estilo.css">
 </head>
 <body>
-    <header>
-        
-      </header>
-     <form>
-      <label for="opcoes">Placa Mãe: </label>
-      <select class = "opcoes" id="opcoes01">
-        <option></option>
-        <option value="a1">Placa Mãe MSI A520M-A PRO</option>
-        <option value="b1">Placa Mãe Gigabyte B550M AORUS ELITE</option>
-        <option value="c1">Placa Mãe Asus Rog Crosshair X670E Extreme</option>
-      </select>
-      <img class="imagem" id="imagemPM" src="" > 
-      <h2 class = "Peças" id="Placa-Mae"></h2>
-    </form>
-    <form>
-      <label for="opcoes">Processador: </label>
-      <select class = "opcoes" id="opcoes02">
-        <option></option>
-        <option value="a2">Intel PROCESSADOR CORE I5</option>
-        <option value="b2">Processador AMD Ryzen 5 5600G</option>
-        <option value="c2">Processador Intel Core i9-10900KF</option>
-      </select>
-      <img class="imagem" id="imagemP" src="" > 
-      <h2 class = "Peças" id="Processador"></h2>
-    </form>
-    <form>
-      <label for="opcoes">Memoria RAM: </label>
-      <select class = "opcoes" id="opcoes03" >
-        <option></option>
-        <option value="a3">Memória HyperX Fury de 8GB</option>
-        <option value="b3">Memória de 16GB DIMM DDR4</option>
-        <option value="c3">Memória Kingston Fury Beast, RGB, 32GB</option>
-      </select>
-      <img class="imagem" id="imagemMR" src="" > 
-      <h2 class = "Peças" id="MemoriaRam"></h2>
-    </form>
-    <form>
-      <label for="opcoes">Placa de Video: </label>
-      <select class = "opcoes" id="opcoes04" >
-        <option></option>
-        <option value="a4">PLACA DE VIDEO TGT GEFORCE GT610</option>
-        <option value="b4">Placa de Vídeo RTX 3050</option>
-        <option value="c4">Placa de Vídeo RTX 3060 Ti</option>
-      </select>
-      <img class="imagem" id="imagemPV" src="" > 
-      <h2 class = "Peças" id="PlacaDeVideo"></h2>
-    </form>
+    <header class="header">
+        <div class="Cabecalho">
+            <img class="logo" src="image\monitor.jpg" alt="logo" height="120" width="120">
+            <a href="../index.html">Home</a>
+            <a href="../Monte_seu_PC/MontePC.html">Monte seu PC</a>
+            <a href="../EditarPerfil/editar.html">Meu perfil</a>
+            <a href="../projeto login/login.html">Login</a>
+        </div>
+    </header>
 
-    <div> 
-    <h2>Comprar</h2>
-    <p id="PrecoTotal"></p>
-    <button>Comprar</button>
+    <div class="container">
+        <header>
+            <h1>Produtos do site</h1>
+            <div class="shopping">
+                <img src="image/carrinho.png">
+                <span class="quantity">0</span>
+            </div>
+        </header>
+
+        <form>
+            <label for="opcoes01">Placa Mãe:</label>
+            <select class="opcoes" id="opcoes01">
+                <option></option>
+                <option value="a1">Placa Mãe MSI A520M-A PRO</option>
+                <option value="b1">Placa Mãe Gigabyte B550M AORUS ELITE</option>
+                <option value="c1">Placa Mãe Asus Rog Crosshair X670E Extreme</option>
+            </select>
+            <img class="imagem" id="imagemPM" src="" alt="Imagem Placa Mãe">
+            <h2 class="Pecas" id="Placa-Mae"></h2>
+        </form>
+
+        <form>
+            <label for="opcoes02">Processador:</label>
+            <select class="opcoes" id="opcoes02">
+                <option></option>
+                <option value="a2">Intel PROCESSADOR CORE I5</option>
+                <option value="b2">Processador AMD Ryzen 5 5600G</option>
+                <option value="c2">Processador Intel Core i9-10900KF</option>
+            </select>
+            <img class="imagem" id="imagemP" src="" alt="Imagem Processador">
+            <h2 class="Pecas" id="Processador"></h2>
+        </form>
+
+        <form>
+            <label for="opcoes03">Memoria RAM:</label>
+            <select class="opcoes" id="opcoes03">
+                <option></option>
+                <option value="a3">Memória HyperX Fury de 8GB</option>
+                <option value="b3">Memória de 16GB DIMM DDR4</option>
+                <option value="c3">Memória Kingston Fury Beast, RGB, 32GB</option>
+            </select>
+            <img class="imagem" id="imagemMR" src="" alt="Imagem Memória RAM">
+            <h2 class="Pecas" id="MemoriaRam"></h2>
+        </form>
+
+        <form>
+            <label for="opcoes04">Placa de Video:</label>
+            <select class="opcoes" id="opcoes04">
+                <option></option>
+                <option value="a4">PLACA DE VIDEO TGT GEFORCE GT610</option>
+                <option value="b4">Placa de Vídeo RTX 3050</option>
+                <option value="c4">Placa de Vídeo RTX 3060 Ti</option>
+            </select>
+            <img class="imagem" id="imagemPV" src="" alt="Imagem Placa de Vídeo">
+            <h2 class="Pecas" id="PlacaDeVideo"></h2>
+        </form>
+
+        <div>
+            <h2>Comprar</h2>
+            <p id="PrecoTotal"></p>
+            <a href="../Carrinho/carrinho.html" ><button >Comprar</button></a>
+        </div>
     </div>
+
     <script src="script.js"></script>
-  </body>
+</body>
 </html>
